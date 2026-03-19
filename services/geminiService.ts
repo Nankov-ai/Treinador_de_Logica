@@ -1,8 +1,12 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import type { Exercise } from '../types';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
-
+let ai: any;
+try {
+  ai = new GoogleGenAI({ apiKey: (process.env.API_KEY || 'CHAVE_FALTA') as string });
+} catch (e) {
+  console.warn("API Key do Gemini ausente ou inválida.");
+}
 const exerciseSchema = {
   type: Type.OBJECT,
   properties: {
