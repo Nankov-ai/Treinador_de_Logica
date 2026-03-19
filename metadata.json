@@ -1,0 +1,5 @@
+{
+  "name": "Logic Gate Trainer",
+  "description": "Uma aplicação interativa concebida para ensinar os fundamentos das operações lógicas (AND, OR, NOT) através de exercícios envolventes do mundo real. A aplicação aumenta progressivamente de dificuldade, fornecendo explicações detalhadas baseadas em IA para ajudar os utilizadores a dominar o pensamento algorítmico.",
+  "requestFramePermissions": []
+}
