@@ -274,9 +274,12 @@ export default function App() {
     <main className="min-h-screen bg-slate-900 flex flex-col items-center justify-center p-4 selection:bg-sky-300 selection:text-sky-900">
       <div className="w-full max-w-4xl mx-auto">
         <header className="relative text-center mb-8">
-          <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300 pb-2">
-            <Link to="/" onClick={() => setDifficulty(null)} className="hover:opacity-80 transition-opacity">Treinador de Lógica</Link>
-          </h1>
+          <div className="flex items-center justify-center gap-3 mb-1">
+            <img src="/nodeflow_icon.svg" alt="Nodeflow" className="h-7 w-7" />
+            <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-cyan-300 pb-2">
+              <Link to="/" onClick={() => setDifficulty(null)} className="hover:opacity-80 transition-opacity">Treinador de Lógica</Link>
+            </h1>
+          </div>
           <p className="text-slate-400 text-base sm:text-lg">Resolve quebra-cabeças em cenários fantásticos e aprende a pensar como um computador.</p>
           <div className="absolute top-0 right-0 flex items-center gap-0 sm:gap-2">
              {difficulty && (
